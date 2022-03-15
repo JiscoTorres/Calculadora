@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="JSCALCULO.js"></script>
+    <link href="CSSCAL.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <title>CalculadoraSemiCientifica</title>
+    <link rel="shortcut icon" href="icoCalculadoraCientificaIcone.ico" type="image/x-icon">
+
+</head>
+ 
+<body>
+    <nav>
+        <img src="LogoNomE.png" alt="Imagenzinha">
+       <ul>
+        <li><a href="#space1"> </a></li>
+        <li><a href="#space2"> </a></li>	
+        <li><a href="#space3"> </a></li>	
+        <li><a href="#space4"> </a></li>		
+       </ul>
+    </nav>
+    <br><br><br>
+    <div class="calculadora">
+        <table cellspacing="10">
+            <tr>
+                <p class="nome-equipe"> Isadora e João Francisco </p>
+                <input class="exibir_dados" id='screen' type="text" readonly></input>
+            </tr>
+            <tr>
+                <td><button class="botao_calculadora" onclick="clearScr()"> C </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('.')"> , </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('*0.01')"> &percnt; </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('/')"> &divide; </button></td>
+
+            </tr>
+            <tr>
+                <td><button class="botao_calculadora" onclick="sendNum('7')"> 7 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('8')"> 8 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('9')"> 9 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('*')"> &times; </button></td>
+            </tr>
+            <tr>
+                <td><button class="botao_calculadora" onclick="sendNum('4')"> 4 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('5')"> 5 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('6')"> 6 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('-')"> &minus; </button></td>
+            </tr>
+            <tr>
+                <td><button class="botao_calculadora" onclick="sendNum('1')"> 1 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('2')"> 2 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('3')"> 3 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('+')"> &plus; </button></td>
+            </tr>
+            <tr>
+                <td><button class="botao_calculadora" onclick="sendNum('0')"> 0 </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('**2')"> X² </button></td>
+                <td><button class="botao_calculadora" onclick="sendNum('**3')"> X³ </button></td>
+                <td><button class="botao_calculadora" onclick="equalTo()"> &equals; </button></td>
+            </tr>
+        </table>
+    </div>    
+    <p class="msg-erro" id="mensagem_erro"></p>
+
+</body>
+<br><br><br><br>
+<footer> 
+<img src="LogoETE.png" alt="ETElogo">
+    <br><br>
+</footer>
+</html>

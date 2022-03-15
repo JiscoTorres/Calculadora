@@ -1,0 +1,115 @@
+
+ 
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0a0303ad;
+}
+
+nav > img {
+     display: flex;
+     width: 15%;
+
+}
+
+nav ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+
+}
+
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+body {
+	background-image: url("BackgroundIMG.png");
+    background-size: cover;
+	text-align: center;
+    font-family: Staatliches, sans-serif;
+}
+
+.calculadora {
+    margin-left: 35%;
+    padding: 30px;
+    border-radius: 20px;
+    width: 299px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(139, 139, 139, 0.76));
+    font-size: 20px;
+}
+.botao_calculadora {
+    background-color: rgb(60, 255, 0);
+    border:none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 22px;
+}
+.botao_calculadora:hover{
+    background-color: rgb(16, 59, 12);
+}
+.exibir_dados {
+    margin-left: 9px;
+    margin-top: 10px;
+    font-size: 40px;
+    width: 270px;
+    height: 50px;
+    text-align: right;   
+    font-family: Staatliches, sans-serif;
+}
+.exibir_dados::placeholder{
+    color: black;
+}
+.nome-equipe{
+    color: rgb(255, 255, 255);
+    font-family: Staatliches, sans-serif;
+    font-style: bold;
+    font-size: 20px;
+    margin-left: 3%;
+    text-align: center; 
+}
+.msg-erro{
+    color: red;
+    font-family: Staatliches, sans-serif;
+    font-style: bold;
+    font-size: 18px;
+    margin-left: 39%;
+
+}
+footer > img{
+    display:inline;
+    text-align: center;
+    width: 15%;
+
+} 
+@media screen and (min-width:768px){
+
+    /*nav*/
+    
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+    
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+    }
+  
