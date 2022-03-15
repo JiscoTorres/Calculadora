@@ -1,7 +1,6 @@
-
+// AUTOR: Gustavo Neitzke.
 var expressao = ''
 var resultado = ''
-var nova_expressao
 function sendNum(digit){
        var algarismo = digit;
        expressao = expressao + algarismo;
